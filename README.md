@@ -14,9 +14,7 @@ This project demonstrates how to architect a scalable system capable of broadcas
 
 ## 📊 Real-Time Score Updates
 
-<p align="center">
 ![Live Score](./screenshots/live-score.png)
-</p>
 
 ---
 
@@ -45,6 +43,7 @@ Built with monitoring and protection tools.
 
 The server broadcasts real-time match updates through a **WebSocket-based event engine**, ensuring ultra-fast delivery with minimal delay.
 
+---
 
 # 🛠 Tech Stack
 
