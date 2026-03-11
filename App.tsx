@@ -45,7 +45,7 @@ const App: React.FC = () => {
         <header className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 bg-brand-yellow border-2 border-black rounded-2xl p-6 shadow-hard">
           <div>
             <h1 className="text-3xl font-black tracking-tight text-brand-dark mb-1">
-              Spotrz
+              LiveSportz
             </h1>
             <p className="text-sm font-medium opacity-80">Real-time match data demo</p>
           </div>
@@ -167,7 +167,7 @@ const App: React.FC = () => {
         </div>
 
         {/* Documentation / Verification Section */}
-        {/* <section className="mt-12 border-t-2 border-gray-200 pt-8">
+        <section className="mt-12 border-t-2 border-gray-200 pt-8">
           <div className="bg-white border-2 border-black rounded-2xl p-6">
             <h3 className="font-bold text-lg mb-4 flex items-center gap-2">
               <span className="bg-black text-white w-6 h-6 flex items-center justify-center rounded-full text-xs">?</span>
@@ -190,7 +190,7 @@ const App: React.FC = () => {
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
       </div>
     </div>
   );

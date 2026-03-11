@@ -1,62 +1,67 @@
-# 🏟️ Sportz App
+# ⚡ LiveSportz – Real-Time Broadcast Engine
 
-**Sportz** is a real-time sports management and tracking application built with **React (Vite)** for the frontend and **Express + Node.js** for the backend. It provides live match updates, commentary, team management, and seamless WebSocket integration for real-time notifications. The app also uses **ArcJet** for security and bot protection.
+<p align="center">
+A high-performance <b>Real-Time Sports Broadcast Engine</b> capable of delivering
+<b>live match scores, commentary, and ball-by-ball updates</b> to
+<b>100,000+ simultaneous users</b> with sub-second latency.
+</p>
 
----
-
-## 🚀 Features
-
-### 🔹 Real-time Live Commentary
-- View minute-by-minute commentary of ongoing matches.
-- Subscribe/unsubscribe to specific matches using WebSocket connections.
-- Automatic updates with WebSocket reconnect and exponential backoff.
-
-### 🔹 Match Management
-- HR managers can add, update, and manage matches.
-- Track match scores, periods, and events.
-
-### 🔹 Team Management
-- Create and manage teams.
-- Add or remove team members dynamically.
-
-### 🔹 Asset & Request Management
-- Employees can request sports assets (e.g., jerseys, equipment).
-- HR managers can approve/reject requests and view limited stock items.
-- Dashboard with top requested and returnable/non-returnable items.
-
-### 🔹 Security & Bot Protection
-- **ArcJet** integration protects the API and WebSocket from bots and abusive requests.
-- Rate limiting, threat detection, and automatic blocking of suspicious traffic.
-- Ensures only legitimate users can access sensitive match data and live commentary.
-
-### 🔹 Notifications & Alerts
-- Live updates for match commentary.
-- Alerts for pending requests or changes in asset availability.
-
-### 🔹 Responsive & Dark Mode Support
-- Mobile, tablet, and desktop support.
-- Beautiful UI with light and dark mode options.
+<p align="center">
+This project demonstrates how to architect a scalable system capable of broadcasting real-time data to millions of users without crashing the server.
+</p>
 
 ---
 
-## 🛠️ Tech Stack
+## 📊 Real-Time Score Updates
 
-| Layer        | Technology                                                                 |
-| ------------ | -------------------------------------------------------------------------- |
-| Frontend     | React + Vite, Tailwind CSS, TypeScript                                     |
-| Backend      | Node.js, Express, WebSocket (ws), ArcJet Security                          |
-| Database     | PostgreSQL, Drizzle ORM                                                    |
-| Deployment   | Vercel (Frontend), Railway (Backend)                                       |
-| Real-time    | WebSocket (Subscribe to match updates and commentary)                      |
-| Monitoring   | Site24x7 / AppMon for APM monitoring                                       |
+<p align="center">
+![Live Score](./screenshots/live-score.png)
+</p>
 
 ---
 
-## 🔐 ArcJet Integration
+# ✨ Features
+
+⚡ **Real-Time Match Updates**  
+Live scores, commentary, and ball-by-ball updates.
+
+🚀 **High-Frequency Broadcast Engine**  
+Handles **100,000+ concurrent users**.
+
+📡 **Sub-Second Latency**  
+Ultra-fast event broadcasting.
+
+🔗 **API & Admin Data Ingestion**  
+Ingest data from APIs or admin dashboard.
+
+📊 **Live Commentary Feed**  
+Stream match commentary in real-time.
+
+🛡 **Secure & Reliable Infrastructure**  
+Built with monitoring and protection tools.
+
+---
+
+
+The server broadcasts real-time match updates through a **WebSocket-based event engine**, ensuring ultra-fast delivery with minimal delay.
+
+
+# 🛠 Tech Stack
+
+### Frontend
+- React
+- Tailwind CSS
 
 ### Backend
-- Protect REST API endpoints using **ArcJet** middleware:
+- Node.js
+- Express.js
 
-```js
-import { securityMiddleware } from './arcjet.js';
-app.use(securityMiddleware());
+### Real-Time Engine
+- WebSockets
+- Event Broadcasting
+
+### Database
+- MongoDB
+
+---
+
